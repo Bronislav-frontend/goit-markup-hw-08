@@ -1,0 +1,14 @@
+.social-links-list {
+  display: flex;
+}
+
+.social-link__logo {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--primary-color);
+  }
+}

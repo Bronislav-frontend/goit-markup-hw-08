@@ -1,0 +1,146 @@
+.footer-section {
+  padding: 60px 0;
+  background-color: var(--hero-title-background-color);
+}
+.footer-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.btm-adress {
+  padding-top: 20px;
+}
+
+.adress-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress-list__link {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.adress-list__link_text_white {
+  color: var(--primary-color);
+}
+
+.adress-list__link_text_grey {
+  color: var(--footer-text-clr);
+}
+
+.footer__social {
+  margin-left: 70px;
+}
+
+.social-links-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.footer__social-list {
+  padding-top: 20px;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--social-link-bg);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-socials {
+  fill: var(--primary-color);
+}
+
+.subscription-form {
+  width: 570px;
+}
+
+.footer__subscription {
+  margin-left: auto;
+}
+
+.subscription-field {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscription-mail {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  color: var(--primary-color);
+  background-color: var(--hero-title-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription-btn {
+  display: flex;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  cursor: pointer;
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--mdl-btn-clr-hvr);
+  }
+}
+
+.telegram-logo {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--primary-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .subscription-btn:hover &,
+  .subscription-btn:focus & {
+    background-color: var(--mdl-btn-clr-hvr);
+  }
+}

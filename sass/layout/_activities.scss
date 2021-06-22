@@ -1,0 +1,30 @@
+@media screen and (max-width: 1200px) {
+  .activities {
+    display: none;
+  }
+}
+
+.activities {
+  padding-bottom: 94px;
+}
+.activities-list__item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.activities-list__thumb {
+  position: relative;
+}
+
+.activities-list__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.14;
+  text-transform: uppercase;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--primary-color);
+}

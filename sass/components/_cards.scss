@@ -1,0 +1,12 @@
+.cards-item {
+  background-color: var(--primary-color);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
