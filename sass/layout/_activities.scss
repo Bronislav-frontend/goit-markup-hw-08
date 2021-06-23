@@ -1,14 +1,17 @@
-@media screen and (max-width: 1200px) {
-  .activities {
-    display: none;
-  }
-}
-
 .activities {
   padding-bottom: 94px;
 }
+
+.activities-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .activities-list__item {
   flex-basis: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .activities-list__thumb {
@@ -27,4 +30,10 @@
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .activities {
+    display: none;
+  }
 }
