@@ -9,19 +9,19 @@
 
 .adress-list {
   margin-top: 20px;
-}
 
-.adress-list__link {
-  font-style: normal;
-  line-height: 1.71;
-}
+  &__link {
+    font-style: normal;
+    line-height: 1.71;
+  }
 
-.adress-list__link_text_white {
-  color: var(--primary-color);
-}
+  &__link_text_white {
+    color: var(--primary-color);
+  }
 
-.adress-list__link_text_grey {
-  color: var(--footer-text-clr);
+  &__link_text_grey {
+    color: var(--footer-text-clr);
+  }
 }
 
 .social-list {
@@ -70,7 +70,7 @@
 }
 
 .footer__social-list {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .footer__subscription {
@@ -148,8 +148,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  .links-section {
+    display: flex;
+  }
   .subscription-mail {
     width: 450px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .social-list {
+    margin-top: 0px;
   }
 }
 
@@ -159,68 +173,43 @@
       margin-bottom: 9px;
     }
   }
-}
 
-/*
-.footer-info {
-  display: flex;
-  align-items: baseline;
-}
-
-.btm-adress {
-  padding-top: 20px;
-}
-
-.adress-list__item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
-}
-
-.footer__social {
-  margin-left: 70px;
-}
-
-
-
-
-
-
-
-.subscription-form {
-  width: 570px;
-}
-
-.footer__subscription {
-  margin-left: auto;
-}
-
-.subscription-field {
-  display: flex;
-  margin-top: 20px;
-}
-
-.subscription-mail {
-  width: 358px;
-  height: 50px;
-  padding: 15px 0 15px 16px;
-  color: var(--primary-color);
-  background-color: var(--hero-title-background-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus {
-    border-color: var(--accent-color);
+  .footer__subscription {
+    margin-top: 0px;
+    margin-left: auto;
+    text-align: unset;
   }
 
-  &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+  .adress-section {
+    text-align: unset;
+  }
+
+  .social-list {
+    text-align: unset;
+  }
+  .footer-info {
+    flex-wrap: nowrap;
+    justify-self: unset;
+  }
+
+  .footer__social {
+    margin-left: 70px;
+  }
+
+  .subscription-form {
+    width: 570px;
+  }
+
+  .subscription-field {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .subscription-btn {
+    margin-top: 0px;
+  }
+
+  .subscription-mail {
+    width: 358px;
   }
 }
-
-*/

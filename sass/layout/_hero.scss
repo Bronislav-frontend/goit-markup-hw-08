@@ -8,21 +8,21 @@
   max-width: 1600px;
   background-position: center;
   background-repeat: no-repeat;
-}
 
-.hero__title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--primary-color);
+  &__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
 }
 
 .modal-btn {
@@ -42,5 +42,57 @@
   &:focus {
     background-color: var(--mdl-btn-clr-hvr);
     color: var(--primary-color);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-mobile@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-mobile.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-tablet.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-desktop@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-clr)),
+      url("../images/header-desktop.jpg");
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
   }
 }

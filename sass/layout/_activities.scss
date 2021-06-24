@@ -5,6 +5,24 @@
 .activities-list {
   display: flex;
   flex-wrap: nowrap;
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.14;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--primary-color);
+  }
 }
 
 .activities-list__item {
@@ -12,24 +30,6 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.activities-list__thumb {
-  position: relative;
-}
-
-.activities-list__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.14;
-  text-transform: uppercase;
-  width: 370px;
-  height: 70px;
-  position: absolute;
-  bottom: 0;
-  background: rgba(47, 48, 58, 0.8);
-  color: var(--primary-color);
 }
 
 @media screen and (max-width: 1200px) {
